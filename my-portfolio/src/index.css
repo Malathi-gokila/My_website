@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 10%;
+
+    --primary: 180 100% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 95%;
+    --secondary-foreground: 220 30% 10%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 15% 40%;
+
+    --accent: 180 100% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 85%;
+    --input: 220 20% 90%;
+    --ring: 180 100% 40%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens - Light mode */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 40% / 0.1), hsl(200 100% 40% / 0.05));
+    --gradient-accent: linear-gradient(90deg, hsl(180 100% 40%), hsl(200 100% 50%));
+    --shadow-glow: 0 0 20px hsl(180 100% 40% / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 220 30% 8%;
+    --foreground: 210 20% 92%;
+
+    --card: 220 25% 12%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 220 30% 8%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 210 20% 92%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 180 100% 60%;
+    --accent-foreground: 220 30% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 18%;
+    --ring: 180 100% 50%;
+
+    /* Custom design tokens - Dark mode */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50% / 0.1), hsl(200 100% 50% / 0.05));
+    --gradient-accent: linear-gradient(90deg, hsl(180 100% 50%), hsl(200 100% 60%));
+    --shadow-glow: 0 0 20px hsl(180 100% 50% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
