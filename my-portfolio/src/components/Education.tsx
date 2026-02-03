@@ -8,10 +8,10 @@
 //   // 🎓 Education timeline
 //   const education = [
 //     {
-//       year: "2025 (Present)",
+//       year: "2026 (Present)",
 //       degree: "B.Tech in Artificial Intelligence and Data Science",
 //       institution: "MEPCO Schlenk Engineering College",
-//       achievement: "8.16 CGPA (Till 6th semester)",
+//       achievement: "8.16 CGPA (Till 7th semester)",
 //     },
 //     {
 //       year: "2022",
