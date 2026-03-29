@@ -11,7 +11,7 @@
 //       year: "2026 (Present)",
 //       degree: "B.Tech in Artificial Intelligence and Data Science",
 //       institution: "MEPCO Schlenk Engineering College",
-//       achievement: "8.16 CGPA (Till 7th semester)",
+//       achievement: "8.15 CGPA (Till 7th semester)",
 //     },
 //     {
 //       year: "2022",
@@ -216,7 +216,7 @@ const Education = () => {
     {
       degree: "B.Tech in Artificial Intelligence and Data Science",
       institution: "MEPCO Schlenk Engineering College",
-      achievement: "8.16 CGPA (Till 7th semester)",
+      achievement: "8.15 CGPA (Till 7th semester)",
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
