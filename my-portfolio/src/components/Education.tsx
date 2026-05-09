@@ -216,7 +216,7 @@ const Education = () => {
     {
       degree: "B.Tech in Artificial Intelligence and Data Science",
       institution: "MEPCO Schlenk Engineering College",
-      achievement: "8.15 CGPA (Till 7th semester)",
+      achievement: "8.26 CGPA",
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
